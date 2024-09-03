@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package gen.helloapis.v1;
+option go_package = "gen/helloapis/v1";
+
+import "proto/helloapis/messages.proto";
+
+service HelloService {
+   rpc Hello(HelloRequest) returns (HelloResponse) {}
+}
+  
